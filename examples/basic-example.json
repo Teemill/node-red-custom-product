@@ -1,43 +1,5 @@
 [
     {
-        "id": "eb487c5172cda1a5",
-        "type": "tab",
-        "label": "Flow 1",
-        "disabled": false,
-        "info": "",
-        "env": []
-    },
-    {
-        "id": "51ef5efed930d0f5",
-        "type": "custom product",
-        "z": "eb487c5172cda1a5",
-        "name": "",
-        "x": 520,
-        "y": 140,
-        "wires": [
-            [
-                "ad81df62e4c426b9"
-            ]
-        ]
-    },
-    {
-        "id": "ad81df62e4c426b9",
-        "type": "debug",
-        "z": "eb487c5172cda1a5",
-        "name": "Product URL",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "payload.url",
-        "targetType": "msg",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 750,
-        "y": 140,
-        "wires": []
-    },
-    {
         "id": "34681674df49be3d",
         "type": "inject",
         "z": "eb487c5172cda1a5",

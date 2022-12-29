@@ -15,7 +15,7 @@ module.exports = function(RED) {
                     Authorization: `Bearer ${this.credentials.publicApiKey || '28raHEvBpyGKPA6noqXnl6nVerZjgE4H7MOy6gBY'}`,
                 },
                 json: {
-                    image_url: msg.payload,
+                    image_url: msg.image_url,
                     item_code: msg.item_code,
                     colours: msg.colours,
                     price: msg.price,
