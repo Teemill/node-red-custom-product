@@ -6,6 +6,7 @@ module.exports = function(RED) {
         RED.nodes.createNode(this, config);
         this.on('input', function(msg, send, done) {
             const url = 'https://teemill.com/omnis/v3/product/create';
+            const default_description = "Check out this awesome custom product, printed sustainably on-demand on organic cotton using renewable energy. Created via Node-RED using the Teemill Custom Product API."
 
             const options = {
                 method: 'POST',
@@ -19,7 +20,7 @@ module.exports = function(RED) {
                     colours: msg.colours,
                     price: msg.price,
                     name: msg.name,
-                    description: this.credentials.publicApiKey ? msg.description : "Check out this awesome product, printed on organic cotton sustainably using renewable energy. Created via Node-RED + the Teemill API, and printed on demand.",
+                    description: this.credentials.publicApiKey ? (msg.description || default_description) : default_description,
                     cross_sell: msg.cross_sell,
                 },
             };
