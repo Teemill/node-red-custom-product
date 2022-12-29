@@ -9,8 +9,8 @@ To customise the checkout to match your branding and to earn profit from product
 Name | Type | Description
 --- | --- | ---
 `msg.image_url` | string | Base64 encoded .png that will be printed on the product.
-`msg.item_code` | string | Teemill item code identifier to specify which product to print on. Defaults to RNA1 (unisex organic t-shirt). See the full list of availble options here.
-`msg.colours` | string | Comma seperated list of colours the product will be available in. See the full list of availble options here.
+`msg.item_code` | string | Teemill item code identifier to specify which product to print on. Defaults to RNA1 (unisex organic t-shirt). See the full list of availble options [here](https://teemill.com/omnis/v3/product/options).
+`msg.colours` | string | Comma seperated list of colours the product will be available in. See the full list of availble options [here](https://teemill.com/omnis/v3/product/options).
 `msg.price` | string | Retail price of the product.
 `msg.name` | string | Name of the custom product.
 `msg.description` | string | Description to be displayed on the product page.
