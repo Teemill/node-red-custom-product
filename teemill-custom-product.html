@@ -1,0 +1,68 @@
+<script type="text/javascript">
+    RED.nodes.registerType('custom product', {
+        category: 'function',
+        color: '#8EA800',
+        defaults: {
+            name: { value: "" }
+        },
+        inputs: 1,
+        outputs: 1,
+        icon: "tshirt.png",
+        label: function () {
+            return this.name || "custom product";
+        },
+        credentials: {
+            publicApiKey: { type: "text" },
+        }
+    });
+</script>
+
+<script type="text/html" data-template-name="custom product">
+    <div class="form-row">
+        <label for="node-input-name"><i class="fa fa-tag"></i> Name</label>
+        <input type="text" id="node-input-name" placeholder="Name">
+    </div>
+    <div class="form-row">
+        <p>To customise the checkout to match your branding and to earn profit from product sales, <a href="https://teemill.com/api" style="text-decoration: underline !important">sign up for a free Teemill account</a> to get your public API key.</p>
+        <label for="node-input-publicApiKey"><i class="fa fa-cogs"></i> Public key</label>
+        <input type="text" id="node-input-publicApiKey">
+    </div>
+</script>
+
+<script type="text/html" data-help-name="custom product">
+    <p>A node that accepts an image and returns a URL for a buyable custom printed product using the <a href="https://teemill.com/api"></a>Teemill API</a>.</p>
+    <p>To customise the checkout to match your branding and to earn profit from product sales, <a href="https://teemill.com/api">sign up for a free Teemill account</a> to get your public API key.</p>
+    <h3>Inputs</h3>
+    <dl class="message-properties">
+        <dt>image_url
+            <span class="property-type">string</span>
+            <dd>Base64 encoded .png that will be printed on the product.</dd>
+        </dt>
+        <dt class="optional">item_code
+            <span class="property-type">string</span>
+            <dd>Teemill item code identifier to specify which product to print on. Defaults to <code>RNA1</code> (unisex organic t-shirt). See the full list of availble options <a href="https://teemill.com/omnis/v3/product/options">here</a>.</dd>
+        </dt>
+        <dt class="optional">colours
+            <span class="property-type">string</span>
+            <dd>Comma seperated list of colours the product will be available in. See the full list of availble options <a href="https://teemill.com/omnis/v3/product/options">here</a>.</dd>
+        </dt>
+        <dt class="optional">price
+            <span class="property-type">string</span>
+            <dd>Retail price of the product.</dd>
+        </dt>
+        <dt class="optional">name
+            <span class="property-type">string</span>
+            <dd>Name of the custom product.</dd>
+        </dt>
+        <dt class="optional">description
+            <span class="property-type">string</span>
+            <dd>Description to be displayed on the product page.</dd>
+        </dt>
+        <dt class="optional">cross_sell
+            <span class="property-type">boolean</span>
+            <dd>Defines whether to offer the design on other product types on the product page. Defaults to <code>1</code>.</dd>
+        </dt>
+    </dl>
+    <h3>API Docs</h3>
+    <p>This node offers all options available via the Teemill Custom Product API - refer to the <a href="https://teemill.com/api-docs/create-custom-product/">docs</a> for all available options.</p>
+</script>

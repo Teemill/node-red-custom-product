@@ -1,0 +1,27 @@
+{
+  "name": "@teemill/node-red-custom-product",
+  "version": "1.0.0",
+  "description": "Node-RED node to generate a buyable custom printed product using a given image",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node-red"
+  ],
+  "author": "Teemill Tech Ltd.",
+  "license": "ISC",
+  "node-red" : {
+    "version": ">=1.0.0",
+    "nodes": {
+      "teemill-custom-product": "teemill-custom-product.js"
+    }
+  },
+  "engines" : { 
+    "npm" : ">=8.0.0",
+    "node" : ">=14.0.0"
+  },
+  "dependencies": {
+    "got": "latest"
+  }
+}
