@@ -1,5 +1,5 @@
 # Teemill custom product node
-This node connects Node-Red to the [Teemill API](https://teemill.com/api), and enables you to create a flow that will take any image then put it on a t-shirt. The Node accepts images in BASE64 format and will return a custom product URL where people can buy that image on real product. It will work out of the box just for fun, or [create a free Teemill account](https://teemill.com/api) then replace the default API credentials with your own if you want to publish your project online and take a share of the profit.
+This node connects Node-Red to the [Teemill API](https://teemill.com/api), and enables you to create a flow that will take any image then put it on a t-shirt. The Node accepts images in BASE64 format and will return a custom product URL where people can buy that image on a real product. It will work out of the box just for fun, or [create a free Teemill account](https://teemill.com/api) then replace the default API credentials with your own if you want to publish your project online and take a share of the profit.
 
 ### Inputs
 
