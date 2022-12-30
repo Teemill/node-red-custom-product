@@ -1,6 +1,6 @@
 {
   "name": "@teemill/node-red-custom-product",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This node connects Node-RED to the Teemill API, and enables you to create a flow that will take any image then put it on a t-shirt. The Node accepts images in Base64 format and will return a custom product URL where people can buy that image on a real product. It will work out of the box just for fun, or create a free Teemill account then replace the default API credentials with your own if you want to publish your project online and take a share of the profit.",
   "main": "index.js",
   "scripts": {
